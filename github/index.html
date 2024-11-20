@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Bangladesh -Watch TV Shows</title>
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.bg{
+    background-image: url(assets/img/hero.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.opacity{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    top: 0;
+    background-color: black;
+    opacity: 0.7;
+}
+
+.radial-gradiant{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 10vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+}
+
+.hero{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+
+.nav-bar{
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center ;
+    margin-left: 7rem;
+    margin-right: 9rem;
+}
+
+
+.nav-logo > img{
+    height: 40px;
+    width: 140px;  
+}
+
+.nav-signin > a{
+    color: white;
+    background-color: rgb(229,9,20);
+    font-family: sans-serif;
+    font-weight: 550;
+    font-size: 12px;
+    padding: 10px 20px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-top: 6rem;
+}
+
+.main-header > h1{
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.main-header > p{
+    margin-bottom: 24px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.main-header > :nth-child(2){
+    margin-bottom: 1rem;
+}
+
+.main-header > h1, p{
+    color: white;
+    text-align: center;
+}
+
+.main-email > p{
+    font-size: 13px;
+    font-weight: 520;
+}
+
+.email2 > p{
+    font-size: 13px;
+    font-weight: 550;
+    line-height: 1.5;
+}
+
+.email{
+    margin-top: 10px;
+    background-color: rgba(22, 22, 22, 0.815);
+    height: 45px;
+    width: 300px;
+    border: 1px solid #615E5F;
+    border-radius: 3px;
+}
+
+.email::placeholder{
+    color: #BAB8B8;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.email2 > a{
+    background-color: #E50914;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    height: 45px;
+    margin: 10px 0 0 5px;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+.email2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.arrow{
+    display:flex;
+    align-items: center;
+}
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="opacity"></div>
+        <div class="radial-gradiant"></div>
+
+        <div class="hero">
+            <nav class="nav-bar">
+                <div class="nav-logo">
+                    <img src="assets/img/logo.svg" alt="">
+                </div>
+                <div class="nav-signin">
+                    <a href="#">Sign In</a>
+                </div>
+            </nav>
+
+            <main class="main">
+                <div class="main-header">
+                    <h1>Unlimited movies,</h1>
+                    <h1> TV shows, and more</h1>
+                    <p>Starts at USD 2.99. Cancel anytime.</p>
+                </div>
+                <div class="main-email">
+                    <p>Ready to watch? Enter your email to create or restart your membership.</p>
+                    <div class="email2">
+                        <input type="email" class="email" placeholder="Email address">
+                        <a class="arrow" href="#"> Get Started <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="white" fill="none">
+                            <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></a>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    </div>
+</body>
+
+</html>
